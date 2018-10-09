@@ -9,15 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
-    <link href="css/stylesheet.css" rel="stylesheet">
-    <script
-        src="https://code.jquery.com/jquery-1.12.4.min.js"
-        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-        crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="./js/owl.carousel.js"></script>
+    <link href="css/stylesheet.min.css" rel="stylesheet">
 </head>
-
 <body>
     <!-- header section -->
     <header class="header">
@@ -64,43 +57,6 @@
                 </div>
             </nav>
         </div>
-        <script>
-            $(document).ready(function() {
-                var headerOpen = $(".header__toggle")
-                var headerClose = $(".header__close")
-                var outside = $(".header .outside")
-                var anchorLink = $(".header-modal-menu__item")
-
-                var handleOpen = function () {
-                    $(".header").addClass("header--opened")
-                    $("html").addClass("html--menu-opened")
-                    $("body").addClass("body--menu-opened")
-                }
-
-                var handleClose = function () {
-                    $(".header").removeClass("header--opened")
-                    $("html").removeClass("html--menu-opened")
-                    $("body").removeClass("body--menu-opened")
-                }
-
-                var anchorScroll = function () {
-                    var elementClick = $(this).attr("href")
-                    var destination = $(elementClick).offset().top;
-
-                    handleClose();
-                    jQuery("html:not(:animated),body:not(:animated)").animate({
-                        scrollTop: destination
-                    }, 800);
-
-                    return false;
-                }
-
-                headerOpen.click(handleOpen);
-                headerClose.click(handleClose);
-                outside.click(handleClose);
-                anchorLink.click(anchorScroll);
-            })
-        </script>
     </header>
     <!-- header section -->
     
@@ -113,9 +69,6 @@
             <div class="services__wrapper">
                 <h2 class="section__title--rotate">Основные услуги</h2>
                 <div class="tabs">
-                    <!-- <div class="tabs__heading">
-                        Выбрать категорию:
-                    </div> -->
                     <div class="tabs__wrapper">
                         <div class="tabs__current">
                             Выбрать категорию:
@@ -253,10 +206,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="numbers numbers--1">
-                            <div class="numbers__current"></div>
-                            <div class="numbers__count"></div>
-                        </div> -->
                     </div>
                     <div class="tab_item">
                         <div class="owl-carousel owl-carousel--2">
@@ -341,13 +290,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="numbers numbers--2">
-                            <div class="numbers__current"></div>
-                            <div class="numbers__count"></div>
-                        </div> -->
                     </div>
                     <div class="tab_item">
-                        <!-- <h3>Уходовые ритуалы и лечение волос</h3> -->
                         <div class="owl-carousel owl-carousel--3">
                             <div class="item">
                                 <img class="item__image" src="./img/hair-1.jpg" alt="Hair service">
@@ -482,13 +426,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="numbers numbers--3">
-                            <div class="numbers__current"></div>
-                            <div class="numbers__count"></div>
-                        </div> -->
                     </div>
                     <div class="tab_item">
-                        <!-- <h3>Макияж</h3> -->
                         <div class="owl-carousel owl-carousel--4">
                             <div class="item">
                                 <img class="item__image" src="./img/nails-8.jpg" alt="Nail service">
@@ -536,35 +475,12 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="numbers numbers--4">
-                            <div class="numbers__current"></div>
-                            <div class="numbers__count"></div>
-                        </div> -->
                     </div>
                     <div class="tab_item">
-                        <!-- <h3>Архитектура бровей</h3> -->
                         <div class="">
-                            <!-- <div class="item">
-                                <img class="item__image" src="./img/eyebrows-1.jpg" alt="Nail service">
-                                <div class="item__content">
-                                    <h4 class="item__heading">Моделирование формы/коррекция бровей</h4>
-                                    <p class="item__price">250/200 ₴</p>
-                                    <ul class="list">
-                                        <li class="list__item">Консультация по подбору формы</li>
-                                        <li class="list__item">Корректирование формы бровей</li>
-                                    </ul>
-                                    <a href="#openModal-window" class="item__button">записаться</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <h4>Окрашивание бровей</h4>
-                            </div> -->
                             <div class="item">
                                 <img class="item__image" src="./img/eyebrows-3.jpg" alt="Nail service">
                                 <div class="item__content">
-                                    <!-- <div class="item__counter item__counter--2">
-                                        <div class="item__counter--current"></div>
-                                    </div> -->
                                     <h4 class="item__heading">Double-сервис</h4>
                                     <p class="item__price">200 ₴</p>
                                     <ul class="list">
@@ -574,13 +490,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="numbers numbers--5">
-                            <div class="numbers__current"></div>
-                            <div class="numbers__count"></div>
-                        </div> -->
                     </div>
                     <div class="tab_item">
-                        <!-- <h3>Косметология</h3> -->
                         <div class="owl-carousel owl-carousel--6">
                             <div class="item">
                                 <img class="item__image" src="./img/cleaning-1.jpg" alt="cleaning service">
@@ -712,19 +623,12 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="numbers numbers--6">
-                            <div class="numbers__current"></div>
-                            <div class="numbers__count"></div>
-                        </div> -->
                     </div>
                     <div class="tab_item">
                         <div class="">
                             <div class="item">
                                 <img class="item__image" src="./img/laser-1.jpg" alt="laser service">
                                 <div class="item__content">
-                                    <!-- <div class="item__counter item__counter--1">
-                                        <div class="item__counter--current"></div>
-                                    </div> -->
                                     <h4 class="item__heading">Лазерная эпиляция</h4>
                                     <p class="item__price">200 - 1450 ₴</p>
                                     <ul class="list">
@@ -737,286 +641,13 @@
                                     <a href="https://clients.aihelps.com/922521" class="item__button">записаться</a>
                                 </div>
                             </div>
-                            <!-- <div class="item">
-                                <img class="item__image" src="./img/laser-1.jpg" alt="laser service">
-                                <div class="item__content">
-                                    <div class="item__counter item__counter--2">
-                                        <div class="item__counter--current"></div>
-                                    </div>
-                                    <h4 class="item__heading">Лазерная эпиляция</h4>
-                                    <p class="item__price">Голени 650 ₴</p>
-                                    <ul class="list">
-                                        <li class="list__item">Консультация врача-косметолога</li>
-                                        <li class="list__item">Подготовка кожи</li>
-                                        <li class="list__item">Эпиляция лазером Lumenis Light Sheer</li>
-                                        <li class="list__item">Нанесение защитного SPF-средства</li>
-                                        <li class="list__item">Обезболивание по желанию клиента, оплачивается дополнительно</li>
-                                    </ul>
-                                    <a href="https://clients.aihelps.com/922521" class="item__button">записаться</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img class="item__image" src="./img/laser-1.jpg" alt="laser service">
-                                <div class="item__content">
-                                    <div class="item__counter item__counter--3">
-                                        <div class="item__counter--current"></div>
-                                    </div>
-                                    <h4 class="item__heading">Лазерная эпиляция</h4>
-                                    <p class="item__price">Руки полностью 700 ₴</p>
-                                    <ul class="list">
-                                        <li class="list__item">Консультация врача-косметолога</li>
-                                        <li class="list__item">Подготовка кожи</li>
-                                        <li class="list__item">Эпиляция лазером Lumenis Light Sheer</li>
-                                        <li class="list__item">Нанесение защитного SPF-средства</li>
-                                        <li class="list__item">Обезболивание по желанию клиента, оплачивается дополнительно</li>
-                                    </ul>
-                                    <a href="https://clients.aihelps.com/922521" class="item__button">записаться</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img class="item__image" src="./img/laser-1.jpg" alt="laser service">
-                                <div class="item__content">
-                                    <div class="item__counter item__counter--4">
-                                        <div class="item__counter--current"></div>
-                                    </div>
-                                    <h4 class="item__heading">Лазерная эпиляция</h4>
-                                    <p class="item__price">Предплечье 550 ₴</p>
-                                    <ul class="list">
-                                        <li class="list__item">Консультация врача-косметолога</li>
-                                        <li class="list__item">Подготовка кожи</li>
-                                        <li class="list__item">Эпиляция лазером Lumenis Light Sheer</li>
-                                        <li class="list__item">Нанесение защитного SPF-средства</li>
-                                        <li class="list__item">Обезболивание по желанию клиента, оплачивается дополнительно</li>
-                                    </ul>
-                                    <a href="https://clients.aihelps.com/922521" class="item__button">записаться</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img class="item__image" src="./img/laser-1.jpg" alt="laser service">
-                                <div class="item__content">
-                                    <div class="item__counter item__counter--5">
-                                        <div class="item__counter--current"></div>
-                                    </div>
-                                    <h4 class="item__heading">Лазерная эпиляция</h4>
-                                    <p class="item__price">Бикини 600 ₴</p>
-                                    <ul class="list">
-                                        <li class="list__item">Консультация врача-косметолога</li>
-                                        <li class="list__item">Подготовка кожи</li>
-                                        <li class="list__item">Эпиляция лазером Lumenis Light Sheer</li>
-                                        <li class="list__item">Нанесение защитного SPF-средства</li>
-                                        <li class="list__item">Обезболивание по желанию клиента, оплачивается дополнительно</li>
-                                    </ul>
-                                    <a href="https://clients.aihelps.com/922521" class="item__button">записаться</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img class="item__image" src="./img/laser-1.jpg" alt="laser service">
-                                <div class="item__content">
-                                    <div class="item__counter item__counter--6">
-                                        <div class="item__counter--current"></div>
-                                    </div>
-                                    <h4 class="item__heading">Лазерная эпиляция</h4>
-                                    <p class="item__price">Бикини глубокое 800 ₴</p>
-                                    <ul class="list">
-                                        <li class="list__item">Консультация врача-косметолога</li>
-                                        <li class="list__item">Подготовка кожи</li>
-                                        <li class="list__item">Эпиляция лазером Lumenis Light Sheer</li>
-                                        <li class="list__item">Нанесение защитного SPF-средства</li>
-                                        <li class="list__item">Обезболивание по желанию клиента, оплачивается дополнительно</li>
-                                    </ul>
-                                    <a href="https://clients.aihelps.com/922521" class="item__button">записаться</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img class="item__image" src="./img/laser-1.jpg" alt="laser service">
-                                <div class="item__content">
-                                    <div class="item__counter item__counter--7">
-                                        <div class="item__counter--current"></div>
-                                    </div>
-                                    <h4 class="item__heading">Лазерная эпиляция</h4>
-                                    <p class="item__price">Подмышечные области 350 ₴</p>
-                                    <ul class="list">
-                                        <li class="list__item">Консультация врача-косметолога</li>
-                                        <li class="list__item">Подготовка кожи</li>
-                                        <li class="list__item">Эпиляция лазером Lumenis Light Sheer</li>
-                                        <li class="list__item">Нанесение защитного SPF-средства</li>
-                                        <li class="list__item">Обезболивание по желанию клиента, оплачивается дополнительно</li>
-                                    </ul>
-                                    <a href="https://clients.aihelps.com/922521" class="item__button">записаться</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img class="item__image" src="./img/laser-1.jpg" alt="laser service">
-                                <div class="item__content">
-                                    <div class="item__counter item__counter--8">
-                                        <div class="item__counter--current"></div>
-                                    </div>
-                                    <h4 class="item__heading">Лазерная эпиляция</h4>
-                                    <p class="item__price">Лицо полностью 650 ₴</p>
-                                    <ul class="list">
-                                        <li class="list__item">Консультация врача-косметолога</li>
-                                        <li class="list__item">Подготовка кожи</li>
-                                        <li class="list__item">Эпиляция лазером Lumenis Light Sheer</li>
-                                        <li class="list__item">Нанесение защитного SPF-средства</li>
-                                        <li class="list__item">Обезболивание по желанию клиента, оплачивается дополнительно</li>
-                                    </ul>
-                                    <a href="https://clients.aihelps.com/922521" class="item__button">записаться</a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img class="item__image" src="./img/laser-1.jpg" alt="laser service">
-                                <div class="item__content">
-                                    <div class="item__counter item__counter--9">
-                                        <div class="item__counter--current"></div>
-                                    </div>
-                                    <h4 class="item__heading">Лазерная эпиляция</h4>
-                                    <p class="item__price">Верхняя губа 200 ₴</p>
-                                    <ul class="list">
-                                        <li class="list__item">Консультация врача-косметолога</li>
-                                        <li class="list__item">Подготовка кожи</li>
-                                        <li class="list__item">Эпиляция лазером Lumenis Light Sheer</li>
-                                        <li class="list__item">Нанесение защитного SPF-средства</li>
-                                        <li class="list__item">Обезболивание по желанию клиента, оплачивается дополнительно</li>
-                                    </ul>
-                                    <a href="https://clients.aihelps.com/922521" class="item__button">записаться</a>
-                                </div>
-                            </div> -->
                         </div>
-                        <!-- <div class="numbers numbers--7">
-                            <div class="numbers__current"></div>
-                            <div class="numbers__count"></div>
-                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
-        <script>
-            var tabList = [
-                'Ногтевая эстетика',
-                'Волосы',
-                'Уходовые ритуалы и лечение волос',
-                'Макияж',
-                'Паралельное выполнение сервисов',
-                'Косметология',
-                'Лезарная эпиляция',
-            ];
-            $(".services .tab_item").not(":first").hide();
-            $(".services__wrapper .tab").click(function() {
-                var currentText = tabList[$(this).index()]
-                $(".tabs__icon").toggleClass("tabs__icon--opened");
-                $(".services__wrapper .tab").removeClass("active-tab").eq($(this).index()).addClass("active-tab");
-                $(".services .tab_item").removeClass("tab_item--active").hide().eq($(this).index()).fadeIn().addClass("tab_item--active");
-                $(".services .tabs__current").html(currentText);
-                $(".services .tabs__list").toggleClass("tabs__list--opened");
-            }).eq(0).addClass("active-tab");
-
-            $(".services .tabs__current").click(function() {
-                $(".tabs__icon").toggleClass("tabs__icon--opened");
-                $(".services .tabs__list").toggleClass("tabs__list--opened");
-            });
-
-            $(document).ready(function(){
-                var owl = $(".services .owl-carousel")
-                var firstOwl = $(".services .owl-carousel--1")
-                var secondOwl = $(".services .owl-carousel--2")
-                var thirdOwl = $(".services .owl-carousel--3")
-                var fourthOwl = $(".services .owl-carousel--4")
-                var sixthOwl = $(".services .owl-carousel--6")
-
-                function callback(event, number) {
-                    var items = event.item.count;     // Number of items
-                    var item = event.item.index;     // Position of the current item
-
-                    $(`.services .owl-carousel--${number} + .numbers--${number} .numbers__current`).html(`0${item + 1}`);
-                    $(`.services .owl-carousel--${number} + .numbers--${number} .numbers__count`).html(`0${items}`);
-                    // $(`.services .owl-carousel--${number} .item__counter--${number} .item__counter--current`).html(`0${item + 1}`);
-                }
-
-                function handleChange(event) {
-                    var items = event.item.count;     // Number of items
-                    var item = event.item.index;     // Position of the current item
-
-                    $(`.services .owl-carousel + .numbers .numbers__current`).html(`0${item + 1}`);
-                    $(`.services .owl-carousel + .numbers .numbers__count`).html(`0${items}`);
-                    // $(`.services .owl-carousel .item__counter .item__counter--current`).html(`0${item + 1}`);
-                }
-
-                firstOwl.owlCarousel({
-                    onInitialized: function(event, number) {
-                        callback(event, 1);
-                    },
-                    loop: true,
-                    responsiveClass: true,
-                    responsive: {
-                        320: {
-                            items: 1,
-                            nav: true
-                        },
-                    },
-                })
-
-                secondOwl.owlCarousel({
-                    onInitialized: function(event, number) {
-                        callback(event, 2);
-                    },
-                    loop: true,
-                    responsiveClass: true,
-                    responsive: {
-                        320: {
-                            items: 1,
-                            nav: true
-                        },
-                    },
-                });
-
-                thirdOwl.owlCarousel({
-                    onInitialized: function(event, number) {
-                        callback(event, 2);
-                    },
-                    loop: true,
-                    responsiveClass: true,
-                    responsive: {
-                        320: {
-                            items: 1,
-                            nav: true
-                        },
-                    },
-                });
-
-                fourthOwl.owlCarousel({
-                    onInitialized: function(event, number) {
-                        callback(event, 2);
-                    },
-                    loop: true,
-                    responsiveClass: true,
-                    responsive: {
-                        320: {
-                            items: 1,
-                            nav: true
-                        },
-                    },
-                });
-
-                sixthOwl.owlCarousel({
-                    onInitialized: function(event, number) {
-                        callback(event, 2);
-                    },
-                    loop: true,
-                    responsiveClass: true,
-                    responsive: {
-                        320: {
-                            items: 1,
-                            nav: true
-                        },
-                    },
-                });
-
-                owl.on('changed.owl.carousel', handleChange)
-            });
-        </script>
     </section>
     <!-- services section -->
-
     <!-- team section -->
     <section class="section team" name="team" id="team">
         <div class="section__inner">
@@ -1098,8 +729,6 @@
                     </div>
                     <div class="item">
                         <picture class="item__image">
-                            <!-- <source srcset="./img/vysokova-320.jpg" media="(max-width: 479px)">
-                            <source srcset="./img/vysokova-desk.jpg" media="(max-width: 768px)"> -->
                             <source srcset="./img/lazova.jpg" media="(min-width: 1200px)">
                             <img src="./img/lazova.jpg" alt="Master photo">
                         </picture>
@@ -1136,8 +765,6 @@
                     </div>
                     <div class="item">
                         <picture class="item__image">
-                            <!-- <source srcset="./img/vysokova-320.jpg" media="(max-width: 479px)">
-                            <source srcset="./img/vysokova-desk.jpg" media="(max-width: 768px)"> -->
                             <source srcset="./img/IMG_1442-min.jpg" media="(min-width: 1200px)">
                             <img src="./img/IMG_1442-min.jpg" alt="Master photo">
                         </picture>
@@ -1172,8 +799,6 @@
                     </div>
                     <div class="item">
                         <picture class="item__image">
-                            <!-- <source srcset="./img/vysokova-320.jpg" media="(max-width: 479px)">
-                            <source srcset="./img/vysokova-desk.jpg" media="(max-width: 768px)">-->
                             <source srcset="./img/arbenina.jpg" media="(min-width: 1200px)"> 
                             <img src="./img/arbenina.jpg" alt="Master photo">
                         </picture>
@@ -1207,8 +832,6 @@
                     </div>
                     <div class="item">
                         <picture class="item__image">
-                            <!-- <source srcset="./img/vysokova-320.jpg" media="(max-width: 479px)">
-                            <source srcset="./img/vysokova-desk.jpg" media="(max-width: 768px)">-->
                             <source srcset="./img/trushenko.jpg" media="(min-width: 1200px)"> 
                             <img src="./img/trushenko.jpg" alt="Master photo">
                         </picture>
@@ -1245,8 +868,6 @@
                     </div>
                     <div class="item">
                         <picture class="item__image">
-                            <!-- <source srcset="./img/vysokova-320.jpg" media="(max-width: 479px)">
-                            <source srcset="./img/vysokova-desk.jpg" media="(max-width: 768px)">-->
                             <source srcset="./img/ivanna.jpg" media="(min-width: 1200px)"> 
                             <img src="./img/ivanna.jpg" alt="Master photo">
                         </picture>
@@ -1280,8 +901,6 @@
                     </div>
                     <div class="item">
                         <picture class="item__image">
-                            <!-- <source srcset="./img/vysokova-320.jpg" media="(max-width: 479px)">
-                            <source srcset="./img/vysokova-desk.jpg" media="(max-width: 768px)"> -->
                             <source srcset="./img/rait.jpg" media="(min-width: 1200px)">
                             <img src="./img/rait.jpg" alt="Master photo">
                         </picture>
@@ -1312,9 +931,6 @@
                     </div>
                     <div class="item">
                         <picture class="item__image item__image--diana">
-                            <!-- <source srcset="./img/vysokova-320.jpg" media="(max-width: 479px)">
-                            <source srcset="./img/vysokova-desk.jpg" media="(max-width: 768px)"> -->
-                            <!-- <source srcset="./img/admin_diana.jpg" media="(min-width: 1200px)"> -->
                             <img src="./img/admin_diana.jpg" alt="Master photo">
                         </picture>
                         <div class="item__content">
@@ -1356,71 +972,6 @@
                 </div>
             </div>
         </div>
-        <script>
-            $(document).ready(function(){
-                var team = [
-                    "Горностаева",
-                    "Мазина",
-                    "Авякян",
-                    "Дьяков",
-                    "Кудлай",
-                    "Трушенко",
-                    "Ковальчук",
-                    "",
-                    ""
-                ];
-
-                var masterName = "";
-
-                var owlTeam = $(".team .owl-carousel");
-
-                function handleChange(event) {
-                    var items = event.item.count;     // Number of items
-                    var item = event.item.index;     // Position of the current item
-
-                    $(`.team .owl-carousel + .numbers .numbers__current`).html(`0${item + 1}`);
-                    $(`.team .owl-carousel + .numbers .numbers__count`).html(`0${items}`);
-                    masterName = team[item];
-                }
-
-                owlTeam.owlCarousel({
-                    loop:false,
-                    responsiveClass:true,
-                    onInitialized:handleChange,
-                    responsive:{
-                        320:{
-                            items:1,
-                            nav:true
-                        },
-                    }
-                });
-
-                owlTeam.on('changed.owl.carousel', handleChange);
-
-                // Form
-
-                var form = $('#form')
-                var formButton = $('#form__button')
-                
-                formButton.click(function(e) {
-                    e.preventDefault();
-                    var clientName = document.getElementById("form_name").value
-                    var phone = document.getElementById("form_phone").value
-                    var postURL = `http://innovations.kh.ua/french/order.php?name=${clientName}&tel=${phone}&text=${masterName}`
-
-                    $.ajax({
-                        url: postURL,
-                        type: 'POST'
-                    })
-                    .done(function(data) {
-                        console.log(data)
-                    })
-                    .fail(function(jqXHR, textStatus) {
-                        console.log( "Request failed: " + textStatus);
-                    });
-                });
-            });
-        </script>
     </section>
     <!-- team section -->
     
@@ -1467,9 +1018,7 @@
         </div>
         <div class="block--cp--primary"></div>
     </div>
-
     <!-- Testimonials section -->
-
     <section class="section testimonials" name="testimonials" id="testimonials">
         <div class="section__inner testimonials__inner">
             <p class="nail">nail</p>
@@ -1517,13 +1066,6 @@
                         <div class="post post--primary">
                             <div class="post__image-wrapper">
                                 <img src="./img/client-1.jpg" alt="Post image" class="post__image post__image--primary">
-                                <!-- <a target="_blank" href="https://www.instagram.com/p/BchzVROhsSo/?utm_source=ig_share_sheet&igshid=lh4vihc7qlgq" class="post__link">
-                                    <svg viewBox="0 0 48 48">
-                                        <path d="M40.4 5.5h-4.8c-1.434 0-2.6 1.166-2.6 2.6v4.8c0 1.434 1.166 2.6 2.6 2.6h4.8c1.434 0 2.6-1.166 2.6-2.6V8.1c0-1.434-1.166-2.6-2.6-2.6zm.6 7.4c0 .331-.269.6-.6.6h-4.8c-.331 0-.6-.269-.6-.6V8.1c0-.331.269-.6.6-.6h4.8c.331 0 .6.269.6.6v4.8z"/>
-                                        <path d="M37.8.5H10.2C4.576.5 0 5.089 0 10.731V37.27C0 42.911 4.576 47.5 10.2 47.5h27.6c5.624 0 10.2-4.589 10.2-10.23V10.731C48 5.089 43.424.5 37.8.5zM46 37.27c0 4.538-3.679 8.23-8.2 8.23H10.2c-4.522 0-8.2-3.692-8.2-8.23V19.5h12.221C11.62 22.043 10 25.584 10 29.5c0 7.72 6.28 14 14 14s14-6.28 14-14c0-3.916-1.62-7.457-4.221-10H46v17.77zM36 29.5c0 6.617-5.383 12-12 12s-12-5.383-12-12 5.383-12 12-12 12 5.383 12 12zm-4.826-12c-2.101-1.261-4.55-2-7.174-2s-5.073.739-7.174 2H2v-6.769C2 6.192 5.679 2.5 10.2 2.5h27.6c4.521 0 8.2 3.692 8.2 8.231V17.5H31.174z"/>
-                                        <path d="M15 29.5c0 4.962 4.037 9 9 9s9-4.038 9-9-4.037-9-9-9-9 4.038-9 9zm16 0c0 3.86-3.141 7-7 7s-7-3.14-7-7 3.141-7 7-7 7 3.14 7 7z"/>
-                                    </svg>
-                                </a> -->
                             </div>
                             <p class="post--position">Блогер</p>
                             <h3 class="post--name">Мила Сиватская</h3>
@@ -1546,13 +1088,6 @@
                         <div class="post post--secondary">
                             <div class="post__image-wrapper">
                                 <img src="./img/client-3.jpg" alt="Post image" class="post__image post__image--secondary">
-                                <!-- <a target="_blank" href="https://www.instagram.com/p/BSEhaTPFYX-/?utm_source=ig_share_sheet&igshid=m0vk2pn5nvpo" class="post__link">
-                                    <svg viewBox="0 0 48 48">
-                                        <path d="M40.4 5.5h-4.8c-1.434 0-2.6 1.166-2.6 2.6v4.8c0 1.434 1.166 2.6 2.6 2.6h4.8c1.434 0 2.6-1.166 2.6-2.6V8.1c0-1.434-1.166-2.6-2.6-2.6zm.6 7.4c0 .331-.269.6-.6.6h-4.8c-.331 0-.6-.269-.6-.6V8.1c0-.331.269-.6.6-.6h4.8c.331 0 .6.269.6.6v4.8z"/>
-                                        <path d="M37.8.5H10.2C4.576.5 0 5.089 0 10.731V37.27C0 42.911 4.576 47.5 10.2 47.5h27.6c5.624 0 10.2-4.589 10.2-10.23V10.731C48 5.089 43.424.5 37.8.5zM46 37.27c0 4.538-3.679 8.23-8.2 8.23H10.2c-4.522 0-8.2-3.692-8.2-8.23V19.5h12.221C11.62 22.043 10 25.584 10 29.5c0 7.72 6.28 14 14 14s14-6.28 14-14c0-3.916-1.62-7.457-4.221-10H46v17.77zM36 29.5c0 6.617-5.383 12-12 12s-12-5.383-12-12 5.383-12 12-12 12 5.383 12 12zm-4.826-12c-2.101-1.261-4.55-2-7.174-2s-5.073.739-7.174 2H2v-6.769C2 6.192 5.679 2.5 10.2 2.5h27.6c4.521 0 8.2 3.692 8.2 8.231V17.5H31.174z"/>
-                                        <path d="M15 29.5c0 4.962 4.037 9 9 9s9-4.038 9-9-4.037-9-9-9-9 4.038-9 9zm16 0c0 3.86-3.141 7-7 7s-7-3.14-7-7 3.141-7 7-7 7 3.14 7 7z"/>
-                                    </svg>
-                                </a> -->
                             </div>
                             <p class="post--position">CHI restaurant</p>
                             <h3 class="post--name">Катерина Милевская</h3>
@@ -1573,13 +1108,6 @@
                         <div class="post post--last">
                             <div class="post__image-wrapper">
                                 <img src="./img/client-5.jpg" alt="Post image" class="post__image post__image--last">
-                                <!-- <a target="_blank" href="https://www.instagram.com/p/BbRti6TnWNs/?utm_source=ig_share_sheet&igshid=z7g2633q6y8" class="post__link">
-                                    <svg viewBox="0 0 48 48">
-                                        <path d="M40.4 5.5h-4.8c-1.434 0-2.6 1.166-2.6 2.6v4.8c0 1.434 1.166 2.6 2.6 2.6h4.8c1.434 0 2.6-1.166 2.6-2.6V8.1c0-1.434-1.166-2.6-2.6-2.6zm.6 7.4c0 .331-.269.6-.6.6h-4.8c-.331 0-.6-.269-.6-.6V8.1c0-.331.269-.6.6-.6h4.8c.331 0 .6.269.6.6v4.8z"/>
-                                        <path d="M37.8.5H10.2C4.576.5 0 5.089 0 10.731V37.27C0 42.911 4.576 47.5 10.2 47.5h27.6c5.624 0 10.2-4.589 10.2-10.23V10.731C48 5.089 43.424.5 37.8.5zM46 37.27c0 4.538-3.679 8.23-8.2 8.23H10.2c-4.522 0-8.2-3.692-8.2-8.23V19.5h12.221C11.62 22.043 10 25.584 10 29.5c0 7.72 6.28 14 14 14s14-6.28 14-14c0-3.916-1.62-7.457-4.221-10H46v17.77zM36 29.5c0 6.617-5.383 12-12 12s-12-5.383-12-12 5.383-12 12-12 12 5.383 12 12zm-4.826-12c-2.101-1.261-4.55-2-7.174-2s-5.073.739-7.174 2H2v-6.769C2 6.192 5.679 2.5 10.2 2.5h27.6c4.521 0 8.2 3.692 8.2 8.231V17.5H31.174z"/>
-                                        <path d="M15 29.5c0 4.962 4.037 9 9 9s9-4.038 9-9-4.037-9-9-9-9 4.038-9 9zm16 0c0 3.86-3.141 7-7 7s-7-3.14-7-7 3.141-7 7-7 7 3.14 7 7z"/>
-                                    </svg>
-                                </a> -->
                             </div>
                             <p class="post--position">CHI restaurant</p>
                             <h3 class="post--name">Стелла Шаповалова</h3>
@@ -1595,41 +1123,8 @@
                 </div>
             </div>
         </div>
-        <script>
-
-            $(document).ready(function(){
-                var owlTestimonials = $(".owl-carousel--testimonials")
-
-                function callback(event) {
-                    var items = event.item.count;     // Number of items
-                    var item = event.item.index;     // Position of the current item
-
-                    $(`.owl-carousel--testimonials + .numbers--testimonials .numbers__current`).html(`0${item + 1}`);
-                    $(`.owl-carousel--testimonials + .numbers--testimonials .numbers__count`).html(`0${items}`);
-                }
-
-                owlTestimonials.owlCarousel({
-                    onInitialized: callback,
-                    loop: false,
-                    responsiveClass: true,
-                    responsive: {
-                        320: {
-                            items: 1,
-                            nav: true
-                        },
-                    },
-                    URLhashListener:true,
-                    autoplay:false,
-                    startPosition: 'URLHash'
-                })
-
-                owlTestimonials.on('changed.owl.carousel', callback)
-            });
-        </script>
     </section>
-
     <!-- Testimonials section ends -->
-    
     <section class="section location" name="contacts" id="contacts">
         <div class="section__inner">                    
             <div class="section__logo">
@@ -1676,11 +1171,6 @@
                 infowindow.open(map, marker);
             }
         </script>
-        <!--Load the API from the specified URL
-        * The async attribute allows the browser to render the page while the API loads
-        * The key parameter will contain your own API key (which is not needed for this tutorial)
-        * The callback parameter executes the initMap() function
-        -->
         <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0p1WATZx4mdb1xove-macFVoxkEWckbQ&callback=initMap">
         </script>
@@ -1767,6 +1257,12 @@
             <p class="footer__text">©2018. Салон красоты<br>«French beauty&nail laboratory» в Киеве.</p>
         </div>
     </footer>
+    <script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="./js/owl.carousel.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
 </body>
-
 </html>

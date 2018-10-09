@@ -11,7 +11,10 @@ var browserSync = require('browser-sync');
 var cssnano = require('gulp-cssnano');
 var del = require('del');
 var imagemin = require('gulp-imagemin');
-var pngquant = require('imagemin-pngquant');
+var cssmin = require('gulp-cssmin');
+var rename = require('gulp-rename');
+var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
 
 var serverConfig = {
     server: {
@@ -32,6 +35,8 @@ gulp.task('sass', function () {
         }))
         .pipe(concat('stylesheet.css'))
         .pipe(cssnano())
+        .pipe(cssmin())
+        .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./build/css'))
         .pipe(browserSync.reload({stream:true}));
 });
@@ -43,14 +48,11 @@ gulp.task('bundleFonts', function() {
 
 gulp.task('bundleImg', function() {
     return gulp.src('./src/img/**/*.+(png|jpg|gif|svg)')
-        .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{
-                removeViewBox: false
-            }],
-            use: [pngquant()],
-            interlaced: true
-        }))
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5})
+        ]))
         .pipe(gulp.dest('./build/img'))
         .pipe(browserSync.reload({
             stream: true
@@ -60,12 +62,14 @@ gulp.task('bundleImg', function() {
 gulp.task('html', function () {
     return gulp.src('./src/*.html')
         .pipe(rigger())
+        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('./build'))
         .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('js', function () {
     return gulp.src('src/js/*.js')
+    // .pipe(uglify({filename: 'src/js/script.js'}))
     .pipe(gulp.dest('build/js'))  
     .pipe(browserSync.reload({stream:true})); 
 });
