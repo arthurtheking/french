@@ -47,7 +47,7 @@ gulp.task('bundleFonts', function() {
 });
 
 gulp.task('bundleImg', function() {
-    return gulp.src('./src/img/**/*.+(png|jpg|gif|svg)')
+    return gulp.src('./src/img/**/*.+(png|jpg|jpeg|gif|svg)')
         .pipe(imagemin([
             imagemin.gifsicle({interlaced: true}),
             imagemin.jpegtran({progressive: true}),
