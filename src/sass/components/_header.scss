@@ -102,7 +102,6 @@
         font-family: "Montserrat-Regular";
         font-size: 31px;
         line-height: 45px;
-        text-transform: uppercase;
         padding-bottom: 15px;
         margin-bottom: 13px;
 
@@ -136,10 +135,10 @@
         width: 260px;
         height: 54px;
         margin: 0 auto 60px;
-        border: 1px solid #000;
 
         .sign_up {
             color: #232323;
+            border: 1px solid #000;
             line-height: 54px;
             text-decoration: none;
             font-family: "Montserrat-SemiBold";
