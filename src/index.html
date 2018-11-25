@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>French beauty and nail laboratory</title>
@@ -10,9 +9,38 @@
     <link rel="icon" href="img/favicon/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
     <link href="css/stylesheet.min.css" rel="stylesheet">
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NCSMDTZ');
+    </script>
+    <!-- End Google Tag Manager -->    
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCSMDTZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->    
     <!-- header section -->
+    <div class="form-dialog form-dialog--hide" id="form-dialog">
+        <div class="form-dialog__underlay"></div>
+        <div class="form-dialog__inner">
+            <form class="form" id="poppup-form">
+                <h3 class="form__heading">
+                    Укажите к какому мастеру вы хотите записаться или какая услуга вам необходима
+                </h3>
+                <input type="text" name="name" id="poppup-form_name" class="form__name" placeholder="Ваше имя" required>
+                <input type="text" name="phone" id="poppup-form_phone" class="form__phone" placeholder="Ваш телефон" required>
+                <input type="text" name="text" id="poppup-form_text" class="form__text" placeholder="Имя мастера или название услуги" required>
+                <button type="submit" class="form__button" id="poppup-form__button">записаться к мастеру</button>
+            </form>
+        </div>
+    </div>
     <header class="header">
         <div class="header__top">
             <div class="header__address">с 9.00 до 21.00 г. Киев, ул. Евгения Коновaльца 44а</div>
@@ -24,7 +52,8 @@
         <h1 class="header__title">Абсолютно новый подход к безопасности beauty-услуг</h1>
         <p class="header__slogan">студия ногтевого сервиса <span class="header__slogan--colored">french</span></p>
         <div class="header__button">
-            <a class="sign_up" href="https://clients.aihelps.com/922521">записаться</a>
+            <button class="sign_up poppup">записаться</button>
+            <!-- https://clients.aihelps.com/922521 -->
         </div>
         <div class="phone">
             <div class="phone__icon">
