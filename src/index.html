@@ -17,7 +17,7 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-NCSMDTZ');
     </script>
-    <!-- End Google Tag Manager -->    
+    <!-- End Google Tag Manager -->
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -25,7 +25,7 @@
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCSMDTZ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
-    <!-- End Google Tag Manager (noscript) -->    
+    <!-- End Google Tag Manager (noscript) -->
     <!-- header section -->
     <div class="form-dialog form-dialog--hide" id="form-dialog">
         <div class="form-dialog__underlay"></div>
@@ -52,7 +52,7 @@
         <h1 class="header__title">Абсолютно новый подход к безопасности beauty-услуг</h1>
         <p class="header__slogan">студия ногтевого сервиса <span class="header__slogan--colored">french</span></p>
         <div class="header__button">
-            <button class="sign_up poppup">записаться</button>
+            <button class="sign_up poppup" id="header-button">записаться</button>
         </div>
         <div class="phone">
             <div class="phone__icon">
@@ -63,12 +63,9 @@
             <a class="phone__text" href="tel:+380671378181">+38(067) 137-81-81</a>
         </div>
         <div class="fixed">
-            <button class="sing_up__fixed poppup">онлайн-запись</button>
+            <button class="sing_up__fixed poppup" id="fixed-button">онлайн-запись</button>
         </div>
         <div class="header__left-text">french</div>
-        <!-- <div class="scrolldown">
-            <p class="scrolldown__text">Scroll down</p>
-        </div> -->
         <div class="header__nav-container">
             <div class="outside"></div>
             <nav class="header__nav">
@@ -87,7 +84,6 @@
         </div>
     </header>
     <!-- header section -->
-    
     <!-- services section -->
     <section class="section services" name="services" id="services">
         <div class="section__inner">
@@ -119,7 +115,7 @@
                             <li class="tab">Лазерная эпиляция</li>
                             <li class="tab">Архитектура бровей</li>
                         </ul>
-                    </div>      
+                    </div>
                 </div>
                 <div class="tab_content">
                     <div class="tab_item tab_item--active">
@@ -140,7 +136,7 @@
                                         <li class="list__item">массаж рук с кремом CND spamanicure</li>
                                         <li class="list__item">рекомендации специалиста по уходу за кожей рук и кутикулой, подбор домашнего ухода</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="nails-1-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -159,7 +155,7 @@
                                         <li class="list__item">увлажнение кожи муссом Footlogix</li>
                                         <li class="list__item">рекомендации специалиста по уходу за кожей ног, подбор домашнего ухода</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="nails-2-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -179,7 +175,7 @@
                                         <li class="list__item">массаж рук/ног кремом SPA NMP</li>
                                         <li class="list__item">рекомендации специалиста по домашнему уходу, подбор средств</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="nails-3-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -197,7 +193,7 @@
                                         <li class="list__item">увлажнение кутикулы миндальным маслом CND Solar Oil</li>
                                         <li class="list__item">массаж рук с кремом CND spamanicure</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="nails-4-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -214,7 +210,7 @@
                                         <li class="list__item">увлажнение кутикулы миндальным маслом CND Solar Oil</li>
                                         <li class="list__item">массаж рук с кремом CND spamanicure</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="nails-5-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -231,7 +227,7 @@
                                         <li class="list__item">увлажнение кутикулы миндальным маслом Dadi’ Oil</li>
                                         <li class="list__item">массаж рук с кремом CND spamanicure</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="nails-6-poppup">записаться</button>
                                 </div>
                             </div>
                         </div>
@@ -255,7 +251,7 @@
                                         <li class="list__item">Укладочный материал Davines/Maroccanoil/BedHead</li>
                                         <li class="list__item">Укладка</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="hair-1-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -275,7 +271,7 @@
                                         <li class="list__item">Укладочный материал Davines/Maroccanoil/BedHead</li>
                                         <li class="list__item">Укладка</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="hair-2-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -295,7 +291,7 @@
                                         <li class="list__item">Укладочный материал Davines/Maroccanoil/BedHead</li>
                                         <li class="list__item">Укладка</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="hair-3-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -315,7 +311,7 @@
                                         <li class="list__item">Укладочный материал Davines/Maroccanoil/BedHead</li>
                                         <li class="list__item">Укладка</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="hair-4-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -335,7 +331,7 @@
                                         <li class="list__item">Укладочный материал Davines/Maroccanoil/BedHead</li>
                                         <li class="list__item">Укладка</li>
                                     </ul> -->
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="hair-5-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -355,7 +351,7 @@
                                         <li class="list__item">Укладочный материал Davines/Maroccanoil/BedHead</li>
                                         <li class="list__item">Укладка</li>
                                     </ul> -->
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="hair-6-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -375,7 +371,7 @@
                                         <li class="list__item">Укладочный материал Davines/Maroccanoil/BedHead</li>
                                         <li class="list__item">Укладка</li>
                                     </ul> -->
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="hair-7-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -395,7 +391,7 @@
                                         <li class="list__item">Укладочный материал Davines/Maroccanoil/BedHead</li>
                                         <li class="list__item">Укладка</li>
                                     </ul> -->
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="hair-8-poppup">записаться</button>
                                 </div>
                             </div>
                         </div>
@@ -422,7 +418,7 @@
                                         <li class="list__item">Сушка волос</li>
                                         <li class="list__item">Рекомендации по домашнему уходу</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="spa-1-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -441,7 +437,7 @@
                                         <li class="list__item">Укладка</li>
                                         <li class="list__item">Рекомендации по домашнему уходу</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="spa-2-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -459,7 +455,7 @@
                                         <li class="list__item">Укладка</li>
                                         <li class="list__item">Рекомендации по домашнему уходу</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="spa-3-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -477,7 +473,7 @@
                                         <li class="list__item">Укладка</li>
                                         <li class="list__item">Рекомендации по домашнему уходу</li>
                                     </ul> -->
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="spa-4-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -495,7 +491,7 @@
                                         <li class="list__item">Укладка</li>
                                         <li class="list__item">Рекомендации по домашнему уходу</li>
                                     </ul> -->
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="spa-5-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -513,7 +509,7 @@
                                         <li class="list__item">Укладка</li>
                                         <li class="list__item">Рекомендации по домашнему уходу</li>
                                     </ul> -->
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="spa-6-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -531,7 +527,7 @@
                                         <li class="list__item">Укладка</li>
                                         <li class="list__item">Рекомендации по домашнему уходу</li>
                                     </ul> -->
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="spa-7-poppup">записаться</button>
                                 </div>
                             </div>
                         </div>
@@ -550,7 +546,7 @@
                                         <li class="list__item">Консультация по подбору макияжа</li>
                                         <li class="list__item">Макияж</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="makeup-1-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -565,7 +561,7 @@
                                         <li class="list__item">Консультация по подбору макияжа</li>
                                         <li class="list__item">Макияж</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="makeup-2-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -580,7 +576,7 @@
                                         <li class="list__item">Консультация по подбору макияжа</li>
                                         <li class="list__item">Макияж</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="makeup-3-poppup">записаться</button>
                                 </div>
                             </div>
                         </div>
@@ -599,7 +595,7 @@
                                             Все рабочие зоны в салоне продуманы для выполнения несколькими специалистами одновременно несколько услуг, таким образом, не теряя уровня качества самих услуг
                                         </li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="makeup-4-poppup">записаться</button>
                                 </div>
                             </div>
                         </div>
@@ -623,7 +619,7 @@
                                         <li class="list__item">Рекомендации по домашнему уходу</li>
                                         <li class="list__item">Рекомендации по дальнейшим уходам и процедурам соответстаенно типу кожи и проблеме</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="makeup-5-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -643,26 +639,9 @@
                                         <li class="list__item">Рекомендации по домашнему уходу</li>
                                         <li class="list__item">Рекомендации по дальнейшим уходам и процедурам соответстаенно типу кожи и проблеме</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="makeup-6-poppup">записаться</button>
                                 </div>
                             </div>
-                            <!-- <div class="item">
-                                <img class="item__image" src="./img/cleaning-3.jpg" alt="cleaning service">
-                                <div class="item__content">
-                                    <h4 class="item__heading">Пилинг Prxt33</h4>
-                                    <p class="item__price">2600 ₴</p>
-                                    <ul class="list">
-                                        <li class="list__item">Диагностика состояния кожи</li>
-                                        <li class="list__item">Очищение кожи : гель/молочко/пенка/тоник DMK</li>
-                                        <li class="list__item">Подготовка к чистке с использованием пиллинга</li>
-                                        <li class="list__item">Чистка ультразвуковой лопаткой в комбинации с мануальной чистой</li>
-                                        <li class="list__item">Успокаивающая маска, сыворотки, крема DMK</li>
-                                        <li class="list__item">Рекомендации по домашнему уходу</li>
-                                        <li class="list__item">Рекомендации по дальнейшим уходам и процедурам соответстаенно типу кожи и проблеме</li>
-                                    </ul>
-                                    <a href="#openModal-window" class="item__button">записаться</a>
-                                </div>
-                            </div> -->
                             <div class="item">
                                 <img class="item__image" src="./img/care-1.jpg" alt="care service">
                                 <div class="item__content">
@@ -675,7 +654,7 @@
                                         <li class="list__item">Ericson Laboratorie</li>
                                         <li class="list__item">OBadgi</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="makeup-7-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -689,7 +668,7 @@
                                     <ul class="list">
                                         <li class="list__item">CO2 Gel Mask Getitpure</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="makeup-8-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -700,7 +679,7 @@
                                     </div> -->
                                     <h4 class="item__heading">Ботокс</h4>
                                     <p class="item__price">1200 -7500 ₴</p>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="makeup-9-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -717,7 +696,7 @@
                                         <li class="list__item">Мезотерапия/биоревитализация</li>
                                         <li class="list__item">Рекомендации по дальнейшим уходам и процедурам соответстаенно типу кожи и проблеме</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="makeup-10-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -732,7 +711,7 @@
                                         <li class="list__item">Консультация врача-косметолога по подбору препарата</li>
                                         <li class="list__item">Инъекция препарата</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="makeup-11-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -747,7 +726,7 @@
                                         <li class="list__item">Консультация врача-косметолога по подбору препарата</li>
                                         <li class="list__item">Инъекция препарата</li>
                                     </ul> -->
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="makeup-12-poppup">записаться</button>
                                 </div>
                             </div>
                         </div>
@@ -766,7 +745,7 @@
                                         <li class="list__item">Нанесение защитного SPF-средства</li>
                                         <li class="list__item">Обезболивание по желанию клиента, оплачивается дополнительно</li>
                                     </ul>
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="laser-1-poppup">записаться</button>
                                 </div>
                             </div>
                         </div>
@@ -790,7 +769,7 @@
                                         <li class="list__item">Рекомендации по домашнему уходу</li>
                                         <li class="list__item">Рекомендации по дальнейшим уходам и процедурам соответстаенно типу кожи и проблеме</li>
                                     </ul> -->
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="laser-2-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -810,7 +789,7 @@
                                         <li class="list__item">Рекомендации по домашнему уходу</li>
                                         <li class="list__item">Рекомендации по дальнейшим уходам и процедурам соответстаенно типу кожи и проблеме</li>
                                     </ul> -->
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="laser-3-poppup">записаться</button>
                                 </div>
                             </div>
                             <div class="item">
@@ -825,7 +804,7 @@
                                         <li class="list__item">Ericson Laboratorie</li>
                                         <li class="list__item">OBadgi</li>
                                     </ul> -->
-                                    <button class="item__button poppup">записаться</button>
+                                    <button class="item__button poppup" id="laser-4-poppup">записаться</button>
                                 </div>
                             </div>
                         </div>
@@ -1019,7 +998,7 @@
                     </div>
                     <div class="item">
                         <picture class="item__image">
-                            <source srcset="./img/trushenko.jpg" media="(min-width: 1200px)"> 
+                            <source srcset="./img/trushenko.jpg" media="(min-width: 1200px)">
                             <img src="./img/trushenko.jpg" alt="Master photo">
                         </picture>
                         <div class="item__content">
@@ -1161,9 +1140,9 @@
         </div>
     </section>
     <!-- team section -->
-    
+
     <div class="section premium__wrapper premium" name="cosmetic" id="cosmetic">
-        <div class="premium__container"> 
+        <div class="premium__container">
             <div class="premium__section premium__section--left">
                 <img class="premium__image" src="./img/brands_photo-min.jpg" alt="Beauty woman">
                 <p class="premium__body">
@@ -1322,7 +1301,7 @@
     </section>
     <!-- Testimonials section ends -->
     <section class="section location" name="contacts" id="contacts">
-        <div class="section__inner">                    
+        <div class="section__inner">
             <div class="section__logo">
                 <img src="./img/style.png" alt="Logo picture">
             </div>
@@ -1448,7 +1427,7 @@
                         <path d="M37.8.5H10.2C4.576.5 0 5.089 0 10.731V37.27C0 42.911 4.576 47.5 10.2 47.5h27.6c5.624 0 10.2-4.589 10.2-10.23V10.731C48 5.089 43.424.5 37.8.5zM46 37.27c0 4.538-3.679 8.23-8.2 8.23H10.2c-4.522 0-8.2-3.692-8.2-8.23V19.5h12.221C11.62 22.043 10 25.584 10 29.5c0 7.72 6.28 14 14 14s14-6.28 14-14c0-3.916-1.62-7.457-4.221-10H46v17.77zM36 29.5c0 6.617-5.383 12-12 12s-12-5.383-12-12 5.383-12 12-12 12 5.383 12 12zm-4.826-12c-2.101-1.261-4.55-2-7.174-2s-5.073.739-7.174 2H2v-6.769C2 6.192 5.679 2.5 10.2 2.5h27.6c4.521 0 8.2 3.692 8.2 8.231V17.5H31.174z"/>
                         <path d="M15 29.5c0 4.962 4.037 9 9 9s9-4.038 9-9-4.037-9-9-9-9 4.038-9 9zm16 0c0 3.86-3.141 7-7 7s-7-3.14-7-7 3.141-7 7-7 7 3.14 7 7z"/>
                     </svg>
-                </a>        
+                </a>
             </div>
             <p class="footer__text">©2018. Салон красоты<br>«French beauty&nail laboratory» в Киеве.</p>
         </div>
