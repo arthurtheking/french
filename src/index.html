@@ -34,11 +34,12 @@
                 <h3 class="form__heading">
                     Укажите к какому мастеру вы хотите записаться или какая услуга вам необходима
                 </h3>
-                <input type="text" name="name" id="poppup-form_name" class="form__name" placeholder="Ваше имя" required>
-                <input type="text" name="phone" id="poppup-form_phone" class="form__phone" placeholder="Ваш телефон" required>
-                <input type="text" name="text" id="poppup-form_text" class="form__text" placeholder="Имя мастера или название услуги" required>
+                <input type="text" name="name" id="poppup-form_name" class="form__name" placeholder="Ваше имя" title="Укажите ваше имя" required>
+                <input type="text" name="phone" id="poppup-form_phone" class="form__phone" placeholder="Ваш телефон" pattern="^(\+?)([\d\(\)\-]*)$" title='Укажите ваш телефон (используйте только цифры 0-9, символы "(", ")", "-")' required>
+                <input type="text" name="text" id="poppup-form_text" class="form__text" placeholder="Имя мастера или название услуги" title="Укажите имя мастера или название интересующей услуги" required>
                 <button type="submit" class="form__button" id="poppup-form__button">записаться к мастеру</button>
             </form>
+            <button class="close-btn" id="poppup-close-btn"><div class="close"></div></button>
         </div>
     </div>
     <header class="header">
@@ -1131,8 +1132,8 @@
                 <div class="sidepic">
                     <form class="form" id="form">
                         <h3 class="form__heading">Хотите к этому мастеру?</h3>
-                        <input type="text" name="name" id="form_name" class="form__name" placeholder="Ваше имя" required>
-                        <input type="text" name="phone" id="form_phone" class="form__phone" placeholder="Ваш телефон" required>
+                        <input type="text" name="name" id="form_name" class="form__name" placeholder="Ваше имя" title="Укажите ваше имя" required>
+                        <input type="text" name="phone" id="form_phone" class="form__phone" placeholder="Ваш телефон" title='Укажите ваш телефон (используйте только цифры 0-9, символы "(", ")", "-")' pattern="/^(\+?)([\d\(\)\-]*)$/" required>
                         <button type="submit" class="form__button" id="form__button">записаться к мастеру</button>
                     </form>
                 </div>
@@ -1146,10 +1147,10 @@
             <div class="premium__section premium__section--left">
                 <img class="premium__image" src="./img/brands_photo-min.jpg" alt="Beauty woman">
                 <p class="premium__body">
-                    Лаборатория красоты FRENCH - единственный в Украине салон красоты, оборудован бактерицидными рециркуляторами воздуха. 
+                    Лаборатория красоты FRENCH - единственный в Украине салон красоты, оборудован бактерицидными рециркуляторами воздуха.
         В салоне красоты FRENCH - безопасность для здоровья клиента - приоритет #1!
         Кварцевание (обеззараживание) воздуха и поверхностей в салоне French - лишь один этап из целого ряда составляющих в процессе поддержания стерильной чистоты. 
-        Мы гарантируем безопасность каждой услуги, начиная со стерильных, одноразовых инструментов и, заканчивая стерильным воздухом. 
+        Мы гарантируем безопасность каждой услуги, начиная со стерильных, одноразовых инструментов и, заканчивая стерильным воздухом.
         Это абсолютная новация в сфере бюти-услуг!
                 </p>
             </div>
